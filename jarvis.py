@@ -6,11 +6,7 @@ import webbrowser
 import os
 import smtplib
 
-contacts = {
-    'name':'emailid'
 
-
-}
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
