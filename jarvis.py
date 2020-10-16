@@ -13,6 +13,10 @@ voices = engine.getProperty('voices')
 # print(voices[0].id)
 engine.setProperty('voice', voices[0].id)
 
+contacts {
+    'name' : 'emailid'
+}
+
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
