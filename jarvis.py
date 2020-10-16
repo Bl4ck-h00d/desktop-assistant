@@ -7,10 +7,7 @@ import os
 import smtplib
 
 contacts = {
-    'shashank' : 'shashankpanda54@gmail.com',
-    'aryan' : 'aryamanbehera@gmail.com',
-    'rohan' : 'rohan.deepakjha@gmail.com',
-    'papa' : 'deepakjhain@yahoo.com'
+    'name':'emailid'
 
 
 }
@@ -61,8 +58,7 @@ def sendEmail(to,body):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('rohan.deepakjha@gmail.com', 'rohan2k#2000')
-    server.sendmail('rohan.deepakjha@gmail.com', to, body)
+    
     server.close()
 
 
